@@ -19,4 +19,7 @@ const galleryHTML = galleryItems
 galleryContainer.innerHTML = galleryHTML;
 
 
-const gallery = new SimpleLightbox(".gallery a");
+const gallery = new SimpleLightbox(".gallery a",
+ { captionsData: 'alt',
+  optionPosition: 'bottom',
+captionDelay: 250,});
